@@ -5,16 +5,16 @@
 
 class EmailAddressParser
 
-attr_accessor :email_addresses
+attr_accessor :emails
 
   def initialize(emails)
-    @email_addresses = emails
+    @emails = emails
   end
 
   def parse
-    array = []
-    comma = @email_addresses.split(", ")
-    white_space = @email_addresses.split(" ")
+    @emails.delete(",")
+    @emails.split(" ")
+    @emails
   end
 
 
