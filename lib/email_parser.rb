@@ -15,6 +15,4 @@ attr_accessor :emails
     @emails.delete(",").split(" ").uniq
   end
 
-
-
 end
