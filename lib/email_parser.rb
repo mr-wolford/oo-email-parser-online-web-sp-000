@@ -15,9 +15,6 @@ attr_accessor :email_addresses
     array = []
     comma = @email_addresses.split(", ")
     white_space = @email_addresses.split(" ")
-    array << comma
-    array << white_space
-    array
   end
 
 
